@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body { 
+            font-family: monospace; 
+            padding: 50px; 
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.guideoftheworld.com%2Fwp-content%2Fuploads%2Fphotos%2Fluzern_switzerland.jpg&f=1&nofb=1&ipt=98d749b837a9394c9e71189955bcd29a16b55314bf02527972b70bc914ff415e);
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .form-container { 
+            background: white; 
+            padding: 40px;             
+            border: 2px solid #2c3e50; 
+            border-radius: 20px; 
+            max-width: 500px; 
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 { text-align: center; color: #2c3e50; }
+        
+        div { margin-bottom: 20px; }
+        
+        label { 
+            display: block; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            color: #2c3e50;
+        }
+
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            border-radius: 8px; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        }
+
+        input[type="color"] { 
+            height: 50px; 
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #00703c; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover { background-color: #005a30; }
+
+        .back-button {
+            display: inline-block;
+            padding: 15px 30px; 
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none; 
+            border-radius: 8px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-wrapper {
+            background-color: bisque; 
+            display: flex;
+            flex-direction: column; 
+            padding-top: 20px;
+            align-items: center;   
+            width: 50%;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <a href="index.html" class="back-button">← Back to Introduction</a>
+        <div class="form-container">
+        <h1>Information Form</h1>
+            <form>
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" placeholder="e.g. linus_tabanao@dlsu.edu.ph" required>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter secure password"
+                        minlength="8"
+                        maxlength="24"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        placeholder="Min 8 chars, 1 uppercase, 1 number"
+                        title="Must contain at least one number, one uppercase, one lowercase letter, and be 8-24 characters long."
+                        required
+                    >
+                </div>
+                <div>
+                    <label>Description (write anything)</label>
+                    <textarea rows="5" placeholder="Provide a detailed description here..."></textarea>
+                </div>
+                <div>
+                    <label>Birthdate</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>Favorite Color</label>
+                    <input type="color">
+                </div>
+                <button type="submit">Submit Information</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Introduction Page</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+                line-height: 1.6;
+                color: #2c3e50;
+                margin: 0;
+                font-size: 20px;
+                padding: 40px 20px;
+                background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3204077.jpg&f=1&nofb=1&ipt=3ab315b20855ac070e3ddf96a43a37cbd9c02b06b58581ba93344923eb97f409");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            
+            .about-author {
+                background: rgba(255, 255, 255, 0.9); 
+                backdrop-filter: blur(10px);
+                padding: 50px;
+                border-radius: 30px;
+                max-width: 850px;
+                margin: 0 auto 30px auto;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                border: 1px solid rgba(255,255,255,0.3);
+            }
+
+            h1 {
+                color: #00703c; 
+                font-size: 2.5rem;
+                border-bottom: 3px solid #00703c;
+                display: inline-block;
+                margin-bottom: 25px;
+            }
+
+            .author-profile {
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                margin-bottom: 30px;
+            }
+
+            .form-intro {
+                display: block; 
+                width: fit-content;
+                margin: 0 auto 30px auto; 
+                padding: 15px 30px; 
+                background-color: #2c3e50;
+                color: white;
+                text-decoration: none; 
+                border-radius: 12px;
+                font-size: 24px; 
+                font-weight: bold;
+                transition: transform 0.2s, box-shadow 0.2s;
+                font-family: monospace;
+}
+
+            .form-intro:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(14, 18, 21, 0.3);
+            }
+
+            .list-hobbies {
+                padding-left: 40px;
+            }
+            .footer {
+                background-color: #00703c; ;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+
+            .carousel-container {
+                width: 100%;       
+                max-width: 850px; 
+                margin: 0 auto;
+                overflow: hidden; 
+                border-radius: 20px;
+                position: relative;
+            }
+
+            .carousel-inner {
+                display: flex;
+                width: 400%;      
+                animation: slide-logic 16s infinite ease-in-out;
+            }
+
+            .carousel-inner img {
+                width: 25%;        
+                height: 500px;    
+                object-fit: cover; 
+                display: block;
+}
+
+            @keyframes slide-logic {
+                0%, 20% { transform: translateX(0%); }
+                25%, 45% { transform: translateX(-25%); }
+                50%, 70% { transform: translateX(-50%); }
+                75%, 95% { transform: translateX(-75%); }
+                100% { transform: translateX(0%); }
+            }
+</style>
+    </head>
+
+    <body>
+        <main>
+            
+            <section class="about-author">
+                 <a href="form.html" class = "form-intro">
+                Registration Form
+                </a>
+
+                <h1>About Author</h1>
+                 <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/571682131_1472335157211502_1775855213424345993_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHpW-mMTyrEpkYahJ8i-aZwTY-ZQ8EjZ_JNj5lDwSNn8sPsfs8OxtBn0bTTO8xP_CpGC2y5fxFN8du046cOA8Hz&_nc_ohc=Nc-vD89PVnoQ7kNvwFW8ndr&_nc_oc=AdlHGL77N8z-53HcIAzOvFpAE8D6Ut2n9x3_vgIlhQm39JlZfxEA5T76koAVvglip7SiSSHCOgpcXD9QNfWE4oRi&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=dApbG9p7g934t06e1-gY-w&oh=00_AfrZPzpWqo8a_Wt1C7X4wrkbTpDNpHXK-nBiEvsLHhKtKw&oe=696FAA30" class="author-profile">
+                        <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/480150451_1278970039881349_3005020861917102301_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeF1iqHKasqxbB_wV5-0Avkw2Z3DgC3UFibZncOALdQWJkSfT4IUZsMAd8Xmv6yUu2U_mT4MoSbBnBylcJOV1EAl&_nc_ohc=X3dUESj33cAQ7kNvwHu5Nwk&_nc_oc=AdnxVEEVrXKAogAXlQlW1JycbrVFAvY7moUhLi9QQKJQ7xZYbSU3246YmeIpCumWDaUIo1fcfrd50N3n98t0aPj-&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=iigCoopxtn3H01bWOKFiEw&oh=00_Afqk45C2Legr5Q4o2SK95I-3YU6uJPLyQi_sW558NBfq7Q&oe=69705261" class="author-profile">
+                        <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/528047789_1400393384405680_249868144543170838_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEUZXe3t4Vzg-GugPjn0adtSbhU7iPeDbFJuFTuI94NsctPO4r9kiPLxB99mjNDiWBaGKM258UyShKJoK7hdzmd&_nc_ohc=CeyjjlvaAqUQ7kNvwH1yV5f&_nc_oc=AdktTuBFfkMI5Mo44-xZSwwCUeSdpOnadAq_g4GTRfCqNg9-bCTXduwujDEsNUablFKmxmOgLLqHR5OYX4YxlZCQ&_nc_zt=23&se=-1&_nc_ht=scontent.fmnl3-1.fna&_nc_gid=MMj2YK911HeB3EeOGUoP4A&oh=00_Afrc1Htzj2Q_YJVAV_7luHaOtOU1-nfnAFKluXqqy7Jf_w&oe=697036BE" class="author-profile">
+                        <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t39.30808-6/495346493_1338205090624510_1874956903847509143_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGA1kEcUbfgjn5vdQD2dvy8y-V4qzQlgMfL5XirNCWAxyx2HHYdByPU1jDszydj8-OEaVRiBkAO6-SdssqTu_vn&_nc_ohc=SivZKOFGmrQQ7kNvwFLdt8r&_nc_oc=AdnAgXFiehCerRfn_GODbt300pTrN3d_nvd7o8rHv6ss96vrhpW8MzciBrDtoUQl4PHwf6FRQOIH493onasi4pYL&_nc_zt=23&_nc_ht=scontent.fmnl3-3.fna&_nc_gid=z6tTvZzAw1vN8I9joYvq_w&oh=00_AfpoXMUCR4LWX1UmRTUKksyF15Z6OGw3srPZBq8kuI656g&oe=697041B2" class="author-profile">
+                    </div>
+                </div>
+
+                <p><b>LINUS WILLIAM S. TABANAO</b></p>
+                <p>
+                Linus enrolls in De La Salle Univeristy as an information systems undergraduate student.<br>
+                He entered DLSU during 2023 and his graduation is expected at early 2028.
+                </p class="list-hobbies">
+                <h4>Hobbies and Interests</h4>
+                <section class="list-hobbies">
+                <li>Chess</li><li>Cooking</li><li>Trekking</li><li>Language Learning</li>
+                <li>Swimming</li><li>Reading</li><li>Guitar</li>
+                </section>
+
+                <h4>My Latest Favorite Pewdiepie Video</h4>
+                <iframe 
+                    width="100%" 
+                    height="352"
+                    src="https://www.youtube.com/embed/qw4fDU18RcU"
+                    title="My Favorite Youtube Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+
+                <h4> My Favorite Spotify Songs</h4>
+                <iframe data-testid="embed-iframe" 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/3GJjoO0DvUa95jFiBIpsGK?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+
+                <iframe data-testid="embed-iframe" 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/1jIu9uVVYaP3x09HLjikQ3?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+
+                <iframe data-testid="embed-iframe" 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/65FftemJ1DbbZ45DUfHJXE?utm_source=generator" 
+                    width="100%" 
+                    height="352"
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Contact: linus_tabanao@dlsu.edu.ph</p>
+        </footer>
+
+    </body>
+
+</html>
